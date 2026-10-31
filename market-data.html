@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Property Tax Estimates: Rates, Bills, and the Spread Between States | propertytaxestimates.com</title>
+<meta name="description" content="Property Tax Estimates: Rates, Bills, and the Spread Between States — aggregated public figures with sources, trend indicators, and methodology.">
+<link rel="canonical" href="https://propertytaxestimates.com/market-data">
+<meta property="og:title" content="Property Tax Estimates: Rates, Bills, and the Spread Between States | propertytaxestimates.com">
+<meta property="og:description" content="Property Tax Estimates: Rates, Bills, and the Spread Between States — aggregated public figures with sources, trend indicators, and methodology.">
+<meta property="og:url" content="https://propertytaxestimates.com/market-data">
+<meta property="og:type" content="website">
+<style>
+:root{--paper:#f7f2e8;--paper2:#efe7d7;--ink:#1f241d;--green:#2e4034;--green2:#223429;--brass:#a07c2c;--brass-lt:#c9a64d;--dim:#5c6157;--line:rgba(46,64,52,.18)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px 48px;background:linear-gradient(to bottom,rgba(15,20,16,.88),transparent)}
+nav .brand{font-family:'Newsreader',serif;font-size:17px;letter-spacing:.18em;color:#fff;text-transform:uppercase}
+nav .price-tag{font-size:12px;letter-spacing:.18em;color:rgba(255,255,255,.75);text-transform:uppercase}
+nav .price-tag b{color:var(--brass-lt);font-weight:600}
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 88px;z-index:1;color:#fff}
+.hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden}
+.hero-bg video{width:100%;height:100%;object-fit:cover}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(18,24,19,.88) 4%,rgba(18,24,19,.28) 52%,rgba(18,24,19,.18) 100%)}
+.eyebrow{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--brass-lt);margin-bottom:26px}
+.hero h1{font-family:'Newsreader',serif;font-weight:400;font-size:clamp(44px,7.4vw,104px);line-height:1.03;max-width:15ch;overflow-wrap:break-word;word-break:break-word}
+.hero h1 em{font-style:italic;color:var(--brass-lt)}
+.hero .lede{margin-top:28px;max-width:56ch;font-size:19px;color:rgba(255,255,255,.85)}
+.hero-cta{margin-top:42px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:18px 42px;background:var(--brass);color:#fff;text-decoration:none;font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;transition:.35s;border:1px solid var(--brass)}
+.btn:hover{background:transparent;color:var(--brass-lt)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn.ghost:hover{border-color:var(--brass-lt);color:var(--brass-lt)}
+.btn.dark{background:var(--green);border-color:var(--green)}
+.btn.dark:hover{background:transparent;color:var(--green)}
+.ledger{position:relative;z-index:1;background:var(--paper2);border-bottom:1px solid var(--line)}
+.ledger .row{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);}
+.ledger .cell{padding:38px 40px;border-right:1px solid var(--line)}
+.ledger .cell:last-child{border-right:none}
+.ledger .v{font-family:'Newsreader',serif;font-size:34px;color:var(--green)}
+.ledger .k{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-top:6px}
+section{position:relative;z-index:1;padding:110px 48px;max-width:1280px;margin:0 auto}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+.kicker{font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--brass);margin-bottom:20px}
+h2{font-family:'Newsreader',serif;font-weight:400;font-size:clamp(36px,4.8vw,62px);line-height:1.14;margin-bottom:32px;color:var(--ink)}
+h2 em{font-style:italic;color:var(--brass)}
+.body-copy{font-size:18px;color:var(--dim);max-width:68ch;margin-bottom:22px}
+.body-copy strong{color:var(--ink);font-weight:500}
+.pull{font-family:'Newsreader',serif;font-style:italic;font-size:clamp(24px,3vw,36px);line-height:1.4;color:var(--green);border-left:2px solid var(--brass);padding-left:32px;margin:54px 0;max-width:34ch}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:20px}
+.duo img{width:100%;height:520px;object-fit:cover}
+.duo .cap{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin-top:14px}
+.greenband{position:relative;z-index:1;background:var(--green);color:#f1ead9}
+.greenband section{padding:100px 48px}
+.greenband h2{color:#f7f2e8}.greenband h2 em{color:var(--brass-lt)}
+.greenband .body-copy{color:rgba(247,242,232,.72)}.greenband .body-copy strong{color:#f7f2e8}
+.greenband .kicker{color:var(--brass-lt)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,166,77,.25);border:1px solid rgba(201,166,77,.25);margin-top:64px}
+.stat{background:var(--green2);padding:48px 38px}
+.stat .n{font-family:'Newsreader',serif;font-size:clamp(36px,4.2vw,56px);color:var(--brass-lt)}
+.stat .l{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(247,242,232,.62);margin-top:12px;line-height:1.6}
+.band{position:relative;z-index:1;margin:0}
+.band img{width:100%;height:420px;object-fit:cover;display:block}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:50px}
+.card{border:1px solid var(--line);padding:42px 34px;transition:.35s;background:#fffdf8}
+.card:hover{border-color:var(--brass);transform:translateY(-6px)}
+.card h3{font-family:'Newsreader',serif;font-weight:500;font-size:22px;margin-bottom:15px;color:var(--ink)}
+.card p{font-size:15px;color:var(--dim)}
+.card .read{display:inline-block;margin-top:20px;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);text-decoration:none;border-bottom:1px solid var(--brass);padding-bottom:5px;transition:.3s}
+.card .read:hover{color:var(--green)}
+.faq{margin-top:20px;border-top:1px solid var(--line)}
+.faq .q{padding:30px 0;border-bottom:1px solid var(--line)}
+.faq .q h3{font-family:'Newsreader',serif;font-weight:500;font-size:21px;margin-bottom:10px}
+.faq .q p{font-size:16px;color:var(--dim);max-width:72ch}
+.cta-panel{position:relative;z-index:1;text-align:center;padding:140px 48px;overflow:hidden;color:#fff}
+.cta-panel .bg{position:absolute;inset:0;z-index:-1}
+.cta-panel .bg img{width:100%;height:100%;object-fit:cover}
+.cta-panel .bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(18,24,19,.55),rgba(18,24,19,.92) 92%)}
+.cta-panel h2{color:#fff}.cta-panel h2 em{color:var(--brass-lt)}
+.cta-panel .kicker{color:var(--brass-lt)}
+.price-big{font-family:'Newsreader',serif;font-size:clamp(56px,7vw,96px);color:var(--brass-lt);margin:8px 0 34px}
+.cta-panel .note{margin-top:28px;font-size:14px;color:rgba(255,255,255,.75)}
+.cta-panel .note a{color:var(--brass-lt)}
+footer{position:relative;z-index:1;background:var(--green2);color:rgba(247,242,232,.7);padding:42px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-size:13px;letter-spacing:.06em}
+footer a{color:var(--brass-lt);text-decoration:none}
+@media(max-width:900px){nav,.hero,section{padding-left:24px;padding-right:24px}.duo,.cards,.stats{grid-template-columns:1fr}.duo img{height:340px}.ledger .row{grid-template-columns:1fr}.ledger .cell{border-right:none;border-bottom:1px solid var(--line)}}
+
+.data-wrap{max-width:900px;margin:0 auto;padding:24px 18px 40px}
+.data-wrap h1,.data-wrap h2{overflow-wrap:break-word;word-break:break-word}
+.updated{font-weight:700}
+table.data{width:100%;border-collapse:collapse;margin:20px 0;table-layout:fixed}
+table.data th,table.data td{border:1px solid #c9a86a;padding:10px 8px;text-align:left;vertical-align:top;overflow-wrap:break-word;word-break:break-word;font-size:15px}
+table.data td a{overflow-wrap:break-word;word-break:break-all}
+@media(max-width:480px){table.data,table.data tbody,table.data tr,table.data td{display:block;width:100%;box-sizing:border-box}table.data thead{display:none}table.data tr{margin-bottom:14px;border:1px solid #c9a86a}table.data td{border:none;border-bottom:1px solid #ddd}.data-wrap{padding:16px 12px}}
+.cta a{display:inline-block;padding:14px 22px;min-height:44px;line-height:1.4}
+
+/* Phase 1 assembly 2026-10-31 */
+.toc{border:1px solid currentColor;padding:18px 22px;margin:0 0 32px;max-width:720px}.toc-title{font-weight:600;margin-bottom:8px}.toc ul{margin:0;padding-left:20px}.toc li{margin:4px 0}.toc a{color:inherit}
+@media (max-width:900px){h1{font-size:clamp(44px,11vw,72px)!important}}
+@media (max-width:900px){.eyebrow,.kicker{letter-spacing:.18em!important}}
+@media (max-width:900px){nav{background:#f7f2e8!important;backdrop-filter:none!important}}
+
+/* Phase 1 assembly 2026-10-31 — nav solid correction */
+@media (max-width:900px){nav{background:rgb(15,20,16)!important;backdrop-filter:none!important}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "propertytaxestimates.com — Property tax rates and bills by state",
+  "description": "Property Tax Estimates: Rates, Bills, and the Spread Between States. Aggregated public estimates for information only.",
+  "temporalCoverage": "2023/2024",
+  "dateModified": "2026-10-25",
+  "creator": {
+    "@type": "Organization",
+    "name": "Prime Domain Capital"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Prime Domain Capital"
+  },
+  "url": "https://propertytaxestimates.com/market-data",
+  "sameAs": [
+    "https://www.realtor.com/news/trends/map-property-tax-rate-by-state-2026/",
+    "https://livesouthfloridarealty.com/the-highest-and-lowest-effective-property-tax-rates-in-the-u-s/",
+    "https://www.nahb.org/blog/2025/12/property-taxes-2024-residential",
+    "https://www.nahb.org/blog/2024/10/how-much-did-home-owners-in-each-state-pay-in-property-taxes-in-2023",
+    "https://www.census.gov/newsroom/press-releases/2025/acs-1-year-estimates.html"
+  ]
+}
+</script>
+<style>
+/* Mobile rendering fix 2026-10-31: domain H1 lines, stacked nav, header clearance */
+@media (max-width:900px){
+main h1{overflow-wrap:normal!important;word-break:normal!important}
+nav:not(.toc){flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+.topbar{flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+main{padding-top:120px!important}
+main h1{font-size:clamp(30px,8.5vw,58px)!important;line-height:1.15!important}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-bg"><video id="heroVideo" autoplay muted loop playsinline poster="images/photo1.jpg"><source src="video/hero.mp4" type="video/mp4"></video></div>
+  <div class="eyebrow reveal">A category-defining domain &middot; Offered by Prime Domain Capital</div>
+  <h1 class="reveal">PropertyTax<em>Estimates</em>.com</h1>
+  <p class="lede reveal">America pays nearly $800 billion a year in property tax — and almost no homeowner can say whether their own bill is fair. The name for the answer is available.</p>
+  <div class="hero-cta reveal">
+    <a class="btn" href="https://www.afternic.com/domain/propertytaxestimates.com">Buy Now — $9,888</a>
+    <a class="btn ghost" href="mailto:info@primedomaincapital.com?subject=PropertyTaxEstimates.com%20inquiry">Inquire</a>
+  </div>
+</header>
+<main class="data-wrap">
+<p class="updated">Last updated: October 25, 2026</p>
+<h1>Property Tax Estimates: Rates, Bills, and the Spread Between States</h1>
+<p>Two numbers describe a property tax bill, and only one of them is printed on it. The nominal rate is local politics. The effective rate — tax actually paid divided by home value — is what an owner feels. On that measure, the same house carries a tax bill more than six times larger in the highest-rate states than in the lowest. This page uses the Tax Foundation&#x27;s effective-rate ranking and the Census Bureau&#x27;s bill data, and keeps the two measures separate.</p>
+<nav class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li><a href="#figures">Figures</a></li><li><a href="#methodology">Methodology</a></li><li><a href="#what-the-numbers-mean">What the numbers mean</a></li><li><a href="#disclaimer">Disclaimer</a></li></ul></nav>
+<h2 id="figures">Figures</h2>
+<table class="data"><thead><tr><th>Figure</th><th>Current figure</th><th>Prior figure</th><th>Trend</th><th>Source</th></tr></thead><tbody>
+<tr><td>Average annual residential property tax bill, United States</td><td><strong>$4,271 (2024)</strong></td><td>$4,112 (2023)</td><td>▲ Up</td><td><a href="https://www.nahb.org/blog/2025/12/property-taxes-2024-residential">National Association of Home Builders analysis of Census Bureau American Community Survey</a></td></tr>
+<tr><td>Average annual residential property tax bill, New Jersey (highest)</td><td><strong>$9,767 (2024)</strong></td><td>$9,572 (2023)</td><td>▲ Up</td><td><a href="https://www.nahb.org/blog/2025/12/property-taxes-2024-residential">National Association of Home Builders analysis of Census Bureau American Community Survey</a></td></tr>
+<tr><td>Average annual residential property tax bill, New York</td><td><strong>$7,573 (2024)</strong></td><td>$7,329 (2023)</td><td>▲ Up</td><td><a href="https://www.nahb.org/blog/2025/12/property-taxes-2024-residential">National Association of Home Builders analysis of Census Bureau American Community Survey</a></td></tr>
+<tr><td>Average annual residential property tax bill, West Virginia (lowest, 2024)</td><td><strong>$1,044 (2024)</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://www.nahb.org/blog/2025/12/property-taxes-2024-residential">National Association of Home Builders analysis of Census Bureau American Community Survey</a></td></tr>
+<tr><td>National average effective property tax rate (aggregate taxes ÷ aggregate value)</td><td><strong>$8.88 per $1,000 of home value (2024)</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://www.nahb.org/blog/2025/12/property-taxes-2024-residential">National Association of Home Builders analysis of Census Bureau American Community Survey</a></td></tr>
+<tr><td>Effective rate, Illinois and New Jersey (joint highest, Tax Foundation 2024 basis)</td><td><strong>1.88%</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://www.realtor.com/news/trends/map-property-tax-rate-by-state-2026/">Tax Foundation 2024 effective-rate data, as reported by Realtor.com (Janelle Fritz, Tax Foundation)</a></td></tr>
+<tr><td>Effective rate, Hawaii (lowest, Tax Foundation 2024 basis)</td><td><strong>0.29%</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://www.realtor.com/news/trends/map-property-tax-rate-by-state-2026/">Tax Foundation 2024 effective-rate data, as reported by Realtor.com</a></td></tr>
+<tr><td>Effective rate, Connecticut / Vermont / New Hampshire</td><td><strong>1.54% / 1.51% / 1.50%</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://livesouthfloridarealty.com/the-highest-and-lowest-effective-property-tax-rates-in-the-u-s/">Tax Foundation 2024 effective-rate data, as summarized in published rankings</a></td></tr>
+<tr><td>Effective rate, Alabama / Arizona / Utah / South Carolina (below 0.50%)</td><td><strong>0.37% / 0.48% / 0.48% / 0.49%</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://www.realtor.com/news/trends/map-property-tax-rate-by-state-2026/">Tax Foundation 2024 effective-rate data, as reported by Realtor.com</a></td></tr>
+<tr><td>National average effective rate (Tax Foundation basis)</td><td><strong>0.89% (2024)</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://livesouthfloridarealty.com/the-highest-and-lowest-effective-property-tax-rates-in-the-u-s/">Tax Foundation 2024 data, as summarized in published rankings</a></td></tr>
+<tr><td>Median monthly owner costs, mortgaged homeowners (mortgage, taxes, insurance, fees)</td><td><strong>$2,035 (2024)</strong></td><td>$1,960 inflation-adjusted (2023)</td><td>▲ Up</td><td><a href="https://www.census.gov/newsroom/press-releases/2025/acs-1-year-estimates.html">U.S. Census Bureau, American Community Survey 1-year estimates</a></td></tr>
+</tbody></table>
+<h2 id="methodology">Methodology</h2>
+<p>Included: Tax Foundation effective rates for 2024 (median tax paid divided by median owner-occupied value, the measure Tax Foundation author Janelle Fritz uses) and National Association of Home Builders analysis of Census Bureau American Community Survey bill data for 2023–2024. Excluded: county-level rates, which vary too widely within states to summarize honestly in a state table; nominal millage rates, which do not account for assessment ratios and exemptions; and any single-county assessor figure presented as a state figure. Prior-period figures are shown only where the same NAHB/ACS series published them.</p>
+<h2 id="what-the-numbers-mean">What the numbers mean</h2>
+<p>The bill ranking and the rate ranking tell different stories, and the difference is the point. New Jersey tops both — the highest average bill ($9,767) and a joint-highest effective rate (1.88%). Hawaii sits at the opposite end on rate (0.29%) yet still produces substantial bills, because its home values are high enough to offset a low rate. A buyer who compares states on rate alone will underprice Hawaii and overprice low-value states; a buyer who compares on bills alone will miss why. The honest comparison needs both columns, which is why this page carries both.</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>Figures on this page are aggregated public estimates for information only. They are not investment advice, legal advice, medical advice, or a quote for any specific case, procedure, or purchase. Individual prices vary by location, provider, severity, and contract. Verify any figure against its linked source before relying on it.</p>
+<div class="cta">
+<p><strong>propertytaxestimates.com is available for purchase at $9,888.</strong></p>
+<p><a href="https://www.afternic.com/domain/propertytaxestimates.com">Buy propertytaxestimates.com now — $9,888</a></p>
+<p>Questions: <a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></p>
+</div>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.realtor.com/news/trends/map-property-tax-rate-by-state-2026/">Tax Foundation 2024 effective-rate data, as reported by Realtor.com</a></li>
+<li><a href="https://livesouthfloridarealty.com/the-highest-and-lowest-effective-property-tax-rates-in-the-u-s/">Tax Foundation 2024 effective-rate ranking, published summary</a></li>
+<li><a href="https://www.nahb.org/blog/2025/12/property-taxes-2024-residential">National Association of Home Builders — Property Taxes on Homes, 2024</a></li>
+<li><a href="https://www.nahb.org/blog/2024/10/how-much-did-home-owners-in-each-state-pay-in-property-taxes-in-2023">National Association of Home Builders — Property Taxes by State, 2023</a></li>
+<li><a href="https://www.census.gov/newsroom/press-releases/2025/acs-1-year-estimates.html">U.S. Census Bureau — ACS 1-year estimates, cost of homeownership, 2024</a></li>
+</ul>
+<h2>Changelog</h2>
+<ul><li>October 2026: Initial edition — Tax Foundation 2024 effective rates by state, NAHB/ACS average bills for 2024 with 2023 comparisons, and Census Bureau median monthly owner costs.</li></ul>
+</main>
+<footer>
+  <span>Offered by <strong>Prime Domain Capital</strong> — a private holder of category-defining domains.</span>
+  <span><a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></span>
+</footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1407571ec8bc45c3a082c91096558135"}'></script>
+<p class="back-home" style="display:block;text-align:center;padding:28px 16px;font-size:15px"><a href="https://propertytaxestimates.com/" style="color:inherit">&larr; Back to propertytaxestimates.com</a></p>
+</body>
+</html>
